@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WitFlix - Watch Movies & Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigasyon çubuğu - üst menü -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-group">
+                <img src="images/icons/witflix.png" alt="WitFlix Icon" class="site-icon">
+                <div class="logo" id="home-logo">WitFlix</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#popular">Popular Now</a></li>
+                <li><a href="#home">Recommended</a></li>
+                <li><a href="#movies">Action</a></li>
+                <li><a href="#drama">Drama</a></li>
+                <li><a href="#comedy">Comedy</a></li>
+                <li><a href="#horror">Horror</a></li>
+                <li><a href="#romance">Romance</a></li>
+            </ul>
+            <div class="search-container">
+                <button class="list-all-button">List All</button>
+                <input type="text" id="searchInput" placeholder="Search movies..." class="search-bar">
+            </div>
+            <div class="user-group">
+                <span class="username">User</span>
+                <img src="images/icons/user.png" alt="User Icon" class="user-icon">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Öne çıkan film bölümü - ana sayfa hero alanı -->
+    <section class="featured-video">
+        <div class="featured-overlay">
+            <h1>Sword and Shadow</h1>
+            <p>A samurai warrior fights against dark forces in feudal Japan. Epic battles and ancient secrets await.</p>
+            <button class="play-button">▶ Play Now</button>
+        </div>
+        <button class="carousel-arrow carousel-prev">‹</button>
+        <button class="carousel-arrow carousel-next">›</button>
+    </section>
+
+    <!-- Popüler filmler bölümü - şu anda popüler olan filmler -->
+    <section id="popular" class="all-movies">
+        <h2>Popular Now</h2>
+        <div class="movie-grid">
+                    <div class="movie-card">
+            <div class="movie-overlay">
+                <h3>Night Warriors</h3>
+                <p>Action • 2024</p>
+                <div class="movie-rating">
+                    <span class="star">★</span>
+                    <span class="rating-text">4.6/5 (1,567 reviews)</span>
+                </div>
+            </div>
+            <button class="movie-play-button">▶ Play</button>
+        </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Lost Paradise</h3>
+                    <p>Drama • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.3/5 (892 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>City Lights</h3>
+                    <p>Comedy • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.1/5 (1,245 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Digital Dreams</h3>
+                    <p>Sci-Fi • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.8/5 (3,456 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Silent Echo</h3>
+                    <p>Thriller • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.4/5 (2,178 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Önerilen filmler bölümü - kullanıcıya önerilen filmler -->
+    <section id="home" class="recommended">
+        <h2>Recommended for You</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Recommended Movie 1</h3>
+                    <p>Genre • Year</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.5/5 (1,234 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Recommended Movie 2</h3>
+                    <p>Genre • Year</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.2/5 (856 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Recommended Movie 3</h3>
+                    <p>Genre • Year</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.7/5 (2,103 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Recommended Movie 4</h3>
+                    <p>Genre • Year</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.1/5 (567 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Recommended Movie 5</h3>
+                    <p>Genre • Year</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.3/5 (1,789 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aksiyon filmleri bölümü - aksiyon kategorisi filmler -->
+    <section id="movies" class="all-movies">
+        <h2>Action Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Death Game</h3>
+                    <p>Action • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.5/5 (1,876 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Last Warrior</h3>
+                    <p>Action • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.2/5 (1,543 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Valley of Wolves</h3>
+                    <p>Action • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.0/5 (987 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Shadow Warrior</h3>
+                    <p>Action • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.6/5 (2,234 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Immortal War</h3>
+                    <p>Action • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.3/5 (1,765 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drama filmleri bölümü - drama kategorisi filmler -->
+    <section id="drama" class="all-movies">
+        <h2>Drama Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Dark Path</h3>
+                    <p>Drama • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.7/5 (2,891 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Last Hope</h3>
+                    <p>Drama • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.4/5 (1,432 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Lonely Heart</h3>
+                    <p>Drama • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.1/5 (756 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Unforgettable Memories</h3>
+                    <p>Drama • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.5/5 (1,987 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Last Farewell</h3>
+                    <p>Drama • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.2/5 (1,234 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Komedi filmleri bölümü - komedi kategorisi filmler -->
+    <section id="comedy" class="all-movies">
+        <h2>Comedy Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Crazy Days</h3>
+                    <p>Comedy • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.0/5 (1,123 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Lucky Fortune</h3>
+                    <p>Comedy • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.3/5 (987 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Mixed Affairs</h3>
+                    <p>Comedy • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.1/5 (654 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Laughter Guarantee</h3>
+                    <p>Comedy • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.4/5 (1,456 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Happy Ending</h3>
+                    <p>Comedy • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.2/5 (1,789 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Korku filmleri bölümü - korku kategorisi filmler -->
+    <section id="horror" class="all-movies">
+        <h2>Horror Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Dark House</h3>
+                    <p>Horror • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.6/5 (2,345 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Shadow Chase</h3>
+                    <p>Horror • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.3/5 (1,678 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Night of Death</h3>
+                    <p>Horror • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.5/5 (2,123 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Cursed Inheritance</h3>
+                    <p>Horror • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.2/5 (1,456 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Fear Tunnel</h3>
+                    <p>Horror • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.4/5 (1,987 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+    <!-- Romantik filmleri bölümü - romantik kategorisi filmler -->
+    <section id="romance" class="all-movies">
+        <h2>Romance Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Love Wind</h3>
+                    <p>Romance • 2024</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.5/5 (1,876 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Heartbeats</h3>
+                    <p>Romance • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.3/5 (1,234 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Spring of Love</h3>
+                    <p>Romance • 2023</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.6/5 (2,567 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Beautiful Love</h3>
+                    <p>Romance • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.2/5 (987 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+            <div class="movie-card">
+                <div class="movie-overlay">
+                    <h3>Last Dance</h3>
+                    <p>Romance • 2022</p>
+                    <div class="movie-rating">
+                        <span class="star">★</span>
+                        <span class="rating-text">4.4/5 (1,543 reviews)</span>
+                    </div>
+                </div>
+                <button class="movie-play-button">▶ Play</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tüm filmler bölümü - tüm filmlerin listelendiği sayfa -->
+    <section id="all-movies-section" class="all-movies" style="display: none;">
+        <h2>All Movies</h2>
+        <div class="movie-grid" id="all-movies-grid">
+            <!-- All movies will be populated here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Site alt bilgisi - footer bölümü -->
+    <footer class="site-footer">
+        <div class="footer-section faq">
+            <h3>FAQ</h3>
+            <p class="faq-text">WitFlix is a subscription-based streaming platform that offers a wide range of movies, TV shows, and exclusive original content. Plans start at $7.99/month, with options for HD, 4K, and multi-device viewing. You can download select titles through the mobile app to watch offline at your convenience. WitFlix is available in over 40 countries, and you can check regional availability on our website. If you wish to cancel your subscription, simply do so anytime through your account settings—access will continue until the end of your billing period.</p>
+        </div>
+        <div class="footer-section follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <img src="images/icons/facebook.png" alt="Facebook" class="social-icon">
+                <img src="images/icons/twitter.png" alt="Twitter" class="social-icon">
+                <img src="images/icons/instagram.png" alt="Instagram" class="social-icon">
+            </div>
+        </div>
+        <div class="footer-section downloads">
+            <h3>Get the App</h3>
+            <div class="app-store-icons">
+                <img src="images/icons/playstore.png" alt="Google Play Store" class="app-store-icon">
+                <img src="images/icons/app-store.png" alt="Apple App Store" class="app-store-icon">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Film detayları bölümü - film oynatma sayfası -->
+    <section id="movie-details" class="movie-details" style="display: none;">
+        <div class="movie-details-content">
+            <div class="movie-info">
+                <h1 class="movie-title">Movie Title</h1>
+                <div class="movie-rating">
+                    <span class="star">★</span>
+                    <span class="rating-text">4.5/5 (1,234 reviews)</span>
+                </div>
+                <p class="movie-description">
+                    This is a brief description of the movie. Shows viewers what to expect.
+                </p>
+            </div>
+        </div>
+        <button class="back-button" onclick="goBack()">← Back to Movies</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
